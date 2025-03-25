@@ -4,7 +4,7 @@
 
 # Processus de Galton-Watson et réaction en chaîne
  
-## Description
+## Description 🔎
 
 Le processus de Galton-Watson est un modèle de dynamique de population permettant de modéliser certains phénomènes évolutifs, comme :
 
@@ -14,7 +14,7 @@ Le processus de Galton-Watson est un modèle de dynamique de population permetta
 
 Ce modèle repose sur une suite de variables aléatoires représentant le nombre d'individus à chaque génération, chaque individu ayant un certain nombre de descendants selon une loi de probabilité donnée.
 
-## Formulation du Modèle
+## Formulation du Modèle 🛠️
 
 Soit une variable aléatoire $( X )$ suivant une loi de probabilité donnée. Considérons une famille de variables aléatoires $( (X_{i,n}) )$ indépendantes et identiquement distribuées selon la loi de $( X )$.  
 Nous définissons alors la suite $( (Z_n) )$ par la relation de récurrence :
@@ -30,7 +30,7 @@ Deux probabilités clés sont étudiées :
 - $( \pi_n = P(Z_n = 0) )$ : la probabilité d'extinction à la génération \( n \),
   $( P_{ext} = P(\exists n \in \mathbb{N}, Z_n = 0) )$ : la probabilité d'extinction totale de la population.
 
-## Exemple d'utilisation
+## Exemple d'utilisation 📖
 
 Un exemple classique du processus de Galton-Watson concerne des particules capables de générer des particules de la même famille.  
 Chaque particule engendre un nombre de descendants selon une loi de probabilité fixe au cours des générations.
@@ -44,7 +44,7 @@ Exemple avec une loi de Bernoulli de paramètre $( p = \frac{1}{2} )$ :
 - Génération 4 : 2 individus,
 - Génération 5 : extinction.
 
-## Objectifs du Projet
+## Objectifs du Projet 🚀
 
 Ce projet vise à simuler et analyser le processus de Galton-Watson à l'aide du langage **R**.  
 Les objectifs principaux sont :
