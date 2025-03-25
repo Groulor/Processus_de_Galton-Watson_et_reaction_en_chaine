@@ -16,26 +16,26 @@ Ce modèle repose sur une suite de variables aléatoires représentant le nombre
 
 ## Formulation du Modèle
 
-Soit une variable aléatoire \( X \) suivant une loi de probabilité donnée. Considérons une famille de variables aléatoires \( (X_{i,n}) \) indépendantes et identiquement distribuées selon la loi de \( X \).  
-Nous définissons alors la suite \( (Z_n) \) par la relation de récurrence :
+Soit une variable aléatoire $( X )$ suivant une loi de probabilité donnée. Considérons une famille de variables aléatoires $( (X_{i,n}) )$ indépendantes et identiquement distribuées selon la loi de $( X )$.  
+Nous définissons alors la suite $( (Z_n) )$ par la relation de récurrence :
+```math
 
-\[
 Z_{n+1} = \sum_{i=1}^{Z_n} X_{i,n}
-\]
 
-où \( Z_n \) représente le nombre d'individus à la génération \( n \).
+```
+où $( Z_n )$ représente le nombre d'individus à la génération \( n \).
 
 Deux probabilités clés sont étudiées :
 
-- \( \pi_n = P(Z_n = 0) \) : la probabilité d'extinction à la génération \( n \),
-- \( P_{ext} = P(\exists n \in \mathbb{N}, Z_n = 0) \) : la probabilité d'extinction totale de la population.
+- $( \pi_n = P(Z_n = 0) )$ : la probabilité d'extinction à la génération \( n \),
+  $( P_{ext} = P(\exists n \in \mathbb{N}, Z_n = 0) )$ : la probabilité d'extinction totale de la population.
 
 ## Exemple d'utilisation
 
 Un exemple classique du processus de Galton-Watson concerne des particules capables de générer des particules de la même famille.  
 Chaque particule engendre un nombre de descendants selon une loi de probabilité fixe au cours des générations.
 
-Exemple avec une loi de Bernoulli de paramètre \( p = \frac{1}{2} \) :
+Exemple avec une loi de Bernoulli de paramètre $( p = \frac{1}{2} )$ :
 
 - Génération 0 : 1 individu,
 - Génération 1 : 2 individus,
@@ -56,11 +56,10 @@ Les objectifs principaux sont :
    - Écrire une fonction `taille_moyenne_n_exo1` pour approximer la taille moyenne de la population à la génération \( n \).
 
 3. **Calcul des probabilités d'extinction**  
-   - Estimer \( \pi_n = P(Z_n = 0) \) pour différentes valeurs de \( n \).
-   - Estimer la probabilité d'extinction totale \( P_{ext} \).
+   - Estimer $( \pi_n = P(Z_n = 0) )$ pour différentes valeurs de $( n )$
+   - Estimer la probabilité d'extinction totale $( P_{ext} )$.
 
 4. **Estimation du nombre moyen de générations avant extinction**  
    - Calculer le nombre moyen de générations avant que la population disparaisse.
 
-## Structure du projet
 
