@@ -50,16 +50,16 @@ Ce projet vise à simuler et analyser le processus de Galton-Watson à l'aide du
 Les objectifs principaux sont :
 
 1. **Simulation du processus**  
-   - Écrire une fonction `generation_n_exo1` en **R** pour simuler l'évolution de la population à la génération \( n \).
+   - A l'aide de la fonction fonction `generation_n_exo1` en **R** pour simuler l'évolution de la population à la génération \( n \).
 
 2. **Estimation de la taille moyenne de la population**  
-   - Écrire une fonction `taille_moyenne_n_exo1` pour approximer la taille moyenne de la population à la génération \( n \).
+   - A l'aide de la fonction fonction `taille_moyenne_n_exo1` pour approximer la taille moyenne de la population à la génération \( n \).
 
 3. **Calcul des probabilités d'extinction**  
-   - Estimer $( \pi_n = P(Z_n = 0) )$ pour différentes valeurs de $( n )$
-   - Estimer la probabilité d'extinction totale $( P_{ext} )$.
+   - Estimation de  $( \pi_n = P(Z_n = 0) )$ pour différentes valeurs de $( n )$
+   - Estimation de la probabilité d'extinction totale $( P_{ext} )$.
 
 4. **Estimation du nombre moyen de générations avant extinction**  
-   - Calculer le nombre moyen de générations avant que la population disparaisse.
+   - Calcul du nombre moyen de générations avant que la population disparaisse.
 
 
